@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  display: flex;
+  position: relative;
+  margin:auto;
+  width: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 95vh;
+  /* background-color: black; */
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.article {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.article img {
+  width: 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-one {
+  background: hsl(31, 77%, 52%);
+}
+
+.article-two {
+  background: hsl(184, 100%, 22%);
+}
+
+.article-three {
+  background: hsl(179, 100%, 13%);
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.text {
+  margin: 1em 0 7rem;
+  color: #fff;
+  font-family: 'Lexend Deca',
+    sans-serif;
+}
+
+.text p {
+  line-height: 2rem;
+  padding: 0 rem 0 0;
+}
+
+.text h1 {
+  font-size: 3em;
+  margin: 2rem 0;
+  font-family: 'Big Shoulders Display',
+    cursive;
+  text-transform: uppercase;
+}
+
+button {
+  width: 10rem;
+  border: none;
+  border-radius: 50px;
+  padding: 1.3rem;
+  text-transform: capitalize;
+  font-weight: bold;
 }
